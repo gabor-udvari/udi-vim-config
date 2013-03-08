@@ -23,11 +23,15 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-" autoindent
-set autoindent
-set tabstop=2
-set shiftwidth=2
+" numbers
+set number
 
 "if $TMUX == ''
 "    set clipboard+=unnamed
 "endif
+
+" Solarized
+syntax enable
+set background=dark
+" set background=light
+colorscheme solarized
