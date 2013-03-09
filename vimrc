@@ -13,6 +13,10 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 
+" tabsize settings
+set tabstop=2
+set shiftwidth=2
+
 " disable arrow keys
 map <up> <nop>
 map <down> <nop>
@@ -31,7 +35,7 @@ set number
 "endif
 
 " Solarized
-syntax enable
+" let g:solarized_termcolors=256
 set background=dark
 " set background=light
 colorscheme solarized
