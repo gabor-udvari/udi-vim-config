@@ -39,3 +39,7 @@ set number
 set background=dark
 " set background=light
 colorscheme solarized
+
+" Gvim copy to OO.org
+" https://bugs.launchpad.net/ubuntu/+source/vim/+bug/617841
+set cb=autoselect,html,exclude:cons\|linux
