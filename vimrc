@@ -34,4 +34,5 @@ set number
 syntax enable
 set background=dark
 " set background=light
-colorscheme solarized
+" colorscheme solarized
+colorscheme zenburn
