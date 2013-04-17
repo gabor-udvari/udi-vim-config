@@ -34,9 +34,12 @@ set number
 "    set clipboard+=unnamed
 "endif
 
+set t_Co=88
+
 " Solarized
-syntax enable
-set background=dark
+" set background=dark
 " set background=light
 " colorscheme solarized
-colorscheme zenburn
+" colorscheme molokai
+colorscheme wombat256
+" colorscheme zenburn
