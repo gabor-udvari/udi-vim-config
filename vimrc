@@ -34,7 +34,7 @@ set number
 "    set clipboard+=unnamed
 "endif
 
-set t_Co=88
+set t_Co=256
 
 " Solarized
 " set background=dark
