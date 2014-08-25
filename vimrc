@@ -1,17 +1,29 @@
-" pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
+" Set 'nocompatible' to ward off unexpected things that your distro might
+" have made, as well as sanely reset options when re-sourcing .vimrc
+set nocompatible
 
-" fakeclip
-runtime bundle/vim-fakeclip/autoload/fakeclip.vim
+if has("autocmd")
+	" pathogen
+	runtime bundle/vim-pathogen/autoload/pathogen.vim
+	execute pathogen#infect()
+	filetype plugin indent on
 
-" folding settings
-set foldmethod=indent   "fold based on indent
-set foldnestmax=10      "deepest fold is 10 levels
-set nofoldenable        "dont fold by default
-set foldlevel=1         "this is just what i use
+	" fakeclip
+	runtime bundle/vim-fakeclip/autoload/fakeclip.vim
+endif
+
+if has("syntax")
+	" switch on syntax highlighting
+	syntax on
+endif
+
+if has("folding")
+	" folding settings
+	set foldmethod=indent   "fold based on indent
+	set foldnestmax=10      "deepest fold is 10 levels
+	set nofoldenable        "dont fold by default
+	set foldlevel=1         "this is just what i use
+endif
 
 " tabsize settings
 set tabstop=2
@@ -34,12 +46,15 @@ set number
 "    set clipboard+=unnamed
 "endif
 
-set t_Co=256
+if has("syntax")
+	set t_Co=256
 
-" Solarized
-" set background=dark
-" set background=light
-" colorscheme solarized
-" colorscheme molokai
-colorscheme wombat256
-" colorscheme zenburn
+	" Solarized
+	" set background=dark
+	" set background=light
+	" colorscheme solarized
+
+	" colorscheme molokai
+	colorscheme wombat256
+	" colorscheme zenburn
+endif
