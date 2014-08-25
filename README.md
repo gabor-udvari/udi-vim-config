@@ -1,4 +1,4 @@
-udi-vim-config
+vim-config
 ==============
 
 Gabor Udvari's vim config
@@ -8,7 +8,7 @@ Using the guidelines found at [vimcasts.org](http://vimcasts.org/episodes/synchr
 Installation
 -------------
 
-	git clone git@github.com:gabor-udvari/udi-vim-config.git ~/.vim
+	git clone git@github.com:gabor-udvari/vim-config.git ~/.vim
 	ln -s ~/.vim/vimrc ~/.vimrc
 	cd ~/.vim
 	git submodule update --init
