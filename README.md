@@ -8,8 +8,10 @@ Using the guidelines found at [vimcasts.org](http://vimcasts.org/episodes/synchr
 Installation
 -------------
 
-	git clone git@github.com:gabor-udvari/vim-config.git ~/.vim
-	ln -s ~/.vim/vimrc ~/.vimrc
-	cd ~/.vim
-	git submodule update --init
-	mkdir -p ~/.local/share/vim/{swap,backup,undo}
+This is a [homeshick](https://github.com/andsens/homeshick) castle, you can use it to install.
+
+  homeshick clone https://github.com/gabor-udvari/vim-config.git
+
+or 
+
+  homeshick clone git@github.com:gabor-udvari/vim-config.git
