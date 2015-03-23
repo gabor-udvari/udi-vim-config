@@ -58,3 +58,8 @@ if has("syntax")
 	colorscheme wombat256
 	" colorscheme zenburn
 endif
+
+if has("eval")
+	let g:airline_powerline_fonts=1
+	let g:airline_theme='wombat'
+endif
