@@ -2,6 +2,9 @@
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
 
+" To disable a plugin, add it's bundle name to the following list
+let g:pathogen_disabled = ['tmuxline.vim']
+
 if has("autocmd")
 	" pathogen
 	runtime bundle/vim-pathogen/autoload/pathogen.vim
