@@ -27,7 +27,7 @@
 	url = https://github.com/bling/vim-airline.git
 [submodule "bundle/promptline.vim"]
 	path = bundle/promptline.vim
-	url = git@github.com:edkolev/promptline.vim.git
+	url = https://github.com/edkolev/promptline.vim.git
 [submodule "bundle/tmuxline.vim"]
 	path = bundle/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim.git
