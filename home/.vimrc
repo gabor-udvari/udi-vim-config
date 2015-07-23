@@ -48,6 +48,13 @@ set number
 " disable automatic commenting
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+" set swapfiles and backupfiles directory
+if !empty($SUDO_USER) && $USER !=# $SUDO_USER
+	set viminfo=
+	set directory-=~/tmp
+	set backupdir-=~/tmp
+endif
+
 "if $TMUX == ''
 "    set clipboard+=unnamed
 "endif
