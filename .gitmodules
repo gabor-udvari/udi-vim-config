@@ -31,3 +31,6 @@
 [submodule "bundle/tmuxline.vim"]
 	path = bundle/tmuxline.vim
 	url = https://github.com/edkolev/tmuxline.vim.git
+[submodule "bundle/vim-eunuch"]
+	path = bundle/vim-eunuch
+	url = git://github.com/tpope/vim-eunuch.git
