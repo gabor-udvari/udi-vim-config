@@ -45,6 +45,9 @@ imap <right> <nop>
 " numbers
 set number
 
+" disable automatic commenting
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 "if $TMUX == ''
 "    set clipboard+=unnamed
 "endif
