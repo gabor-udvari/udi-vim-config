@@ -34,3 +34,6 @@
 [submodule "bundle/vim-eunuch"]
 	path = bundle/vim-eunuch
 	url = git://github.com/tpope/vim-eunuch.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/jakar/vim-json.git
