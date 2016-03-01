@@ -40,3 +40,6 @@
 [submodule "bundle/vdebug"]
 	path = bundle/vdebug
 	url = https://github.com/joonty/vdebug.git
+[submodule "bundle/vim-taskjuggler"]
+	path = bundle/vim-taskjuggler
+	url = https://github.com/kalafut/vim-taskjuggler.git
