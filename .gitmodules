@@ -43,3 +43,6 @@
 [submodule "bundle/vim-taskjuggler"]
 	path = bundle/vim-taskjuggler
 	url = https://github.com/kalafut/vim-taskjuggler.git
+[submodule "bundle/join.vim"]
+	path = bundle/join.vim
+	url = https://github.com/sk1418/Join.git
