@@ -76,3 +76,22 @@ if has("eval")
 	let g:airline_powerline_fonts=1
 	let g:airline_theme='wombat'
 endif
+
+" Set higher font size on Windows
+" Taken from https://stackoverflow.com/a/39579362
+set guifont=default
+if has('windows')
+	"get dpi, strip out utf-16 garbage and new lines
+	"system() converts 0x00 to 0x01 for 'platform independence'
+	"should return something like 'PixelsPerXLogicalInch=192'
+	"get the part from the = to the end of the line (eg '=192') and strip
+	"the first character
+	"and convert to a number
+	let dpi = str2nr(strpart(matchstr(substitute(
+				\system('wmic desktopmonitor get PixelsPerXLogicalInch /value'),
+				\'\%x01\|\%x0a\|\%x0a\|\%xff\|\%xfe', '', 'g'),
+				\'=.*$'), 1))
+	if dpi > 100
+		set guifont=Droid_Sans_Mono_Slashed_for_Pow:h12
+	endif
+endif
