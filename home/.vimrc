@@ -95,3 +95,6 @@ if has('windows')
 		set guifont=Droid_Sans_Mono_Slashed_for_Pow:h12
 	endif
 endif
+
+" Set fugitive to vertical by default
+set diffopt+=vertical
