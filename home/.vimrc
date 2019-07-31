@@ -107,6 +107,10 @@ if &diff
 	let &diffexpr='EnhancedDiff#Diff("git diff", "--word-diff --diff-algorithm=patience")'
 endif
 
+" Disable the bell
+set visualbell
+set t_vb=
+
 " Vim 8.1.0.360 has internal xdiff library
 " https://vimways.org/2018/the-power-of-diff/
 "if has("patch-8.1.0360")
