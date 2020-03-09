@@ -97,3 +97,15 @@ endif
 
 " Set fugitive to vertical by default
 set diffopt+=vertical
+
+" Set patience algorithm by default with EnhancedDiff plugin
+" started In Diff-Mode set diffexpr (plugin not loaded yet)
+if &diff
+	let &diffexpr='EnhancedDiff#Diff("git diff", "--word-diff --diff-algorithm=patience")'
+endif
+
+" Vim 8.1.0.360 has internal xdiff library
+" https://vimways.org/2018/the-power-of-diff/
+"if has("patch-8.1.0360")
+"	set diffopt+=internal,algorithm:patience
+"endif
