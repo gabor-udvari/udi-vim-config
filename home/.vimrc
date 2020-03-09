@@ -111,9 +111,9 @@ endif
 set visualbell
 set t_vb=
 
-" Reduce redrawtime to 500
+" Reduce redrawtime to 1000
 " https://github.com/vim/vim/issues/2712
-set redrawtime=500
+set redrawtime=1000
 
 " Vim 8.1.0.360 has internal xdiff library
 " https://vimways.org/2018/the-power-of-diff/
