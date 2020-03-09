@@ -3,7 +3,10 @@
 set nocompatible
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ['tmuxline.vim']
+let g:pathogen_disabled = [
+	\ 'tmuxline.vim',
+	\ 'promptline.vim'
+	\ ]
 
 if has("autocmd")
 	" pathogen
