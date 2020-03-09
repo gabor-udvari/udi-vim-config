@@ -58,3 +58,6 @@
 [submodule "bundle/nginx.vim"]
 	path = bundle/nginx.vim
 	url = https://github.com/chr4/nginx.vim.git
+[submodule "bundle/vim-colors-github"]
+	path = bundle/vim-colors-github
+	url = https://github.com/endel/vim-github-colorscheme.git
